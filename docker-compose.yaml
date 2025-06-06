@@ -1,0 +1,9 @@
+services:
+  app:
+    build: ./
+    container_name: BackendChallenge
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=default
+    restart: always
