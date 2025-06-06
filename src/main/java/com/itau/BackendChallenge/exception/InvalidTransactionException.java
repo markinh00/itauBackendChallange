@@ -12,6 +12,5 @@ public class InvalidTransactionException {
     public ResponseEntity<Void> invalidTransactionException(MethodArgumentNotValidException e) {
         System.out.println(e.getMessage());
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
-
     }
 }
